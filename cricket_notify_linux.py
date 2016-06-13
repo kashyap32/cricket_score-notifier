@@ -40,8 +40,8 @@ def fetch():
 
 def main():
 	old = None
-	score_data = fetch_score_data()
-	print('\nFollowing live scores are available now:\n')
+	score_data = fetch()
+	print('\nThese live scores are available now:\n')
 
 
 	for i, game in enumerate(score_data[1:], 1): 
