@@ -18,13 +18,13 @@ cric_info_api = 'http://static.cricinfo.com/rss/livescores.xml'
 
 
 
-Notify.init("App Name")
+Notify.init("score-notifier")
 
 def notify(text):
 	Notify.Notification.new(text).show()
 
 
-def fetch_score_data():
+def fetch():
 	url = cric_info_api
 
 	score_data_raw = requests.get(url)
